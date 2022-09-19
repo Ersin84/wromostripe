@@ -2,6 +2,7 @@ import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 
+
 import CheckoutForm from "../components/CheckoutForm";
 
 // Make sure to call loadStripe outside of a component’s render to avoid
@@ -30,7 +31,7 @@ export default function App() {
     clientSecret,
     appearance,
   };
-
+  
   return (
     <div className="App">
       {clientSecret && (
@@ -41,3 +42,4 @@ export default function App() {
     </div>
   );
 }
+
